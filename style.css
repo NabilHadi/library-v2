@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(241, 237, 230);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+tr {
+  transition: background-color ease-in-out;
+}
+
+tr:hover {
+  background-color: antiquewhite;
+}
+
+h1 {
+  margin: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+button:active {
+  transform: scale(1);
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.d-none {
+  display: none;
+}
+
+#book-table {
+  margin: 1rem;
+}
+
+#form-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#form-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-book-form {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: white;
+}
+
+#new-book-form > div {
+  margin: 0.5rem 0;
+}
